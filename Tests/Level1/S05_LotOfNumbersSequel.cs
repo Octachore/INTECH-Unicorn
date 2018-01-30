@@ -83,6 +83,7 @@ namespace ITI.Unicorn.Tests.Level1
         };
 
         [Test]
+        [Timeout(100)]
         public void P05_LotOfNumbersSequel_GetProduct()
         {
             var result1 = P05_LotOfNumbersSequel.GetProduct(Matrix1);

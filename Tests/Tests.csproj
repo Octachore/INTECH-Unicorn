@@ -50,6 +50,7 @@
     <Compile Include="Level1\S04_LotOfNumbers.cs" />
     <Compile Include="Level1\S05_LotOfNumbersSequel.cs" />
     <Compile Include="Level2\S01_Rabbits.cs" />
+    <Compile Include="Level3\S01_Shortcut.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +62,6 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Level3\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

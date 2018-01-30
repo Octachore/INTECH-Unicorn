@@ -49,7 +49,7 @@ namespace ITI.Unicorn.Tests.Level1
         [TestCase(1001, 7927)]
         [TestCase(1001, 7927)]
         [TestCase(10001, 104743)]
-        [Timeout(500)]
+        [Timeout(100)]
         public void P03_OptimusPrime_GetPrime(int number, int expected)
         {
             var result = P03_OptimusPrime.GetPrime(number);

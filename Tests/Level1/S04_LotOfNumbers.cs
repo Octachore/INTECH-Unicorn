@@ -40,6 +40,7 @@ namespace ITI.Unicorn.Tests.Level1
         [TestCase(16, 1693758366720)]
         [TestCase(21, 889223142528000)]
         [TestCase(100, 0)]
+        [Timeout(100)]
         public void P04_LotOfNumbers_GetAdjacentProduct(int count, long expected)
         {
             var number = Regex.Replace(NUMBER, @"\t|\n|\r", "");
