@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Level1\S01_Unicorn.cs" />
+    <Compile Include="Level1\S01_Unicornflakes.cs" />
     <Compile Include="Level1\S02_Palindrome.cs" />
+    <Compile Include="Level1\S03_OptimusPrime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
