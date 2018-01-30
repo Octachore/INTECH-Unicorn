@@ -43,9 +43,14 @@
   <ItemGroup>
     <Compile Include="Guard.cs" />
     <Compile Include="Level1\P01_Unicornflakes.cs" />
-    <Compile Include="Level1\P02_Palindrome.cs" />
+    <Compile Include="Level1\P02_NoLemonNoMelon.cs" />
     <Compile Include="Level1\P03_OptimusPrime.cs" />
+    <Compile Include="Level1\P04_LotOfNumbers.cs" />
+    <Compile Include="Level2\P01_Rabbits.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Level3\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

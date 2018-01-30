@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Numerics;
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P02_Palindrome
+    public class P02_NoLemonNoMelon
     {
         public static BigInteger GetLargestPalindrome(int factorsDigitsCount)
         {
