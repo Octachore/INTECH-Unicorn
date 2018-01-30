@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
+﻿using System.Numerics;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
@@ -12,7 +7,7 @@ namespace ITI.Unicorn.Tests.Level1
 {
     public class S04_LotOfNumbers
     {
-        private string NUMBER = @"73167176531330624919225119674426574742355349194934
+        private const string NUMBER = @"73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
 12540698747158523863050715693290963295227443043557

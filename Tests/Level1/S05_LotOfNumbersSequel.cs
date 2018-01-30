@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ITI.Unicorn.Core.Level1;
+﻿using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level1
