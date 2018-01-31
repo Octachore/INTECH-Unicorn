@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6448775A-1E2B-4234-85A5-6F7AEDAA8B52}</ProjectGuid>
+    <ProjectGuid>{2919D418-FCE7-47C2-9E2F-8CBE9EBE30EE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ITI.Unicorn.Core</RootNamespace>
