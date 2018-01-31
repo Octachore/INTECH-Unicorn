@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ITI.Unicorn.Core.Level2
+namespace ITI.Unicorn.Core.Level1
 {
-    public static class P04_Powers
+    public static class P06_Powers
     {
         public static int GetSolution(int p)
         {

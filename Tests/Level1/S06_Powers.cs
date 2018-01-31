@@ -1,17 +1,17 @@
-﻿using ITI.Unicorn.Core.Level2;
+﻿using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
-namespace ITI.Unicorn.Tests.Level2
+namespace ITI.Unicorn.Tests.Level1
 {
-    public class S04_Powers
+    public class S06_Powers
     {
         [TestCase(3, 1301)]
         [TestCase(4, 19316)]
         [TestCase(5, 443839)]
         [TestCase(6, 548834)]
-        public void P04_Powers_GetSolution(int p, int expected)
+        public void P06_Powers_GetSolution(int p, int expected)
         {
-            var result = P04_Powers.GetSolution(p);
+            var result = P06_Powers.GetSolution(p);
 
             Assert.That(result, Is.EqualTo(expected));
         }
