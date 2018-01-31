@@ -4,6 +4,6 @@
 
 Small math & algo problems.
 
-See [ITI.Unicorn.docx](ITI.Unicorn.docx) for details.
+See [ITI.Unicorn.pdf](ITI.Unicorn.pdf) for details.
 
 Make all the tests go green. Good luck, have fun.
