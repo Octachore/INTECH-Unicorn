@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P03_OptimusPrime
+    public static class P03_OptimusPrime
     {
         public static int GetPrime(int n)
         {

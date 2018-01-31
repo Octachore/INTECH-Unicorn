@@ -2,7 +2,7 @@
 
 namespace ITI.Unicorn.Core.Level2
 {
-    public class P02_TheBigOne
+    public static class P02_TheBigOne
     {
         private static Dictionary<long, List<long>> _alreadyChecked;
 

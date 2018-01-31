@@ -2,7 +2,7 @@
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P05_LotOfNumbersSequel
+    public static class P05_LotOfNumbersSequel
     {
         public static int GetProduct(int[,] matrix)
         {

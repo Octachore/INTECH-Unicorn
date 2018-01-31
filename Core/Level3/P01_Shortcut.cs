@@ -2,7 +2,7 @@
 
 namespace ITI.Unicorn.Core.Level3
 {
-    public class P01_Shortcut
+    public static class P01_Shortcut
     {
         // Combinatorics solution (shortcut)
         public static BigInteger GetNumberOfPaths(int a, int b)

@@ -2,7 +2,7 @@
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P01_Unicornflakes
+    public static class P01_Unicornflakes
     {
         public static string[] GetSolution(int[] input)
         {

@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P04_LotOfNumbers
+    public static class P04_LotOfNumbers
     {
         public static BigInteger GetAdjacentProduct(string number, int count)
         {
@@ -21,5 +21,34 @@ namespace ITI.Unicorn.Core.Level1
 
             return bigestProd;
         }
+
+        //public static BigInteger GetAdjacentProduct2(string number, int count)
+        //{
+        //    BigInteger bigestProd = 0;
+
+        //    for (int i = 0; i < (number.Length - count); i++)
+        //    {
+        //        BigInteger prod = ProdResult(number, count, i);
+
+        //        if (prod > bigestProd)
+        //        {
+        //            bigestProd = prod;
+        //        }
+        //    }
+
+        //    return bigestProd;
+        //}
+
+        //public static BigInteger ProdResult(string number, int count, int position)
+        //{
+        //    BigInteger currentPro = 1;
+
+        //    for (int i = position; i < (position + count); i++)
+        //    {
+        //        currentPro *= Convert.ToInt32(number[i].ToString());
+        //    }
+
+        //    return currentPro;
+        //}
     }
 }

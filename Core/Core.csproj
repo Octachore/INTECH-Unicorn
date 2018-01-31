@@ -50,7 +50,9 @@
     <Compile Include="Level2\P01_Rabbits.cs" />
     <Compile Include="Level2\P02_TheBigOne.cs" />
     <Compile Include="Level2\P03_Kheops.cs" />
+    <Compile Include="Level2\P04_Powers.cs" />
     <Compile Include="Level3\P01_Shortcut.cs" />
+    <Compile Include="Level3\P02_Switch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

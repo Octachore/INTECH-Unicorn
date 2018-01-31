@@ -52,7 +52,9 @@
     <Compile Include="Level2\S01_Rabbits.cs" />
     <Compile Include="Level2\S02_TheBigOne.cs" />
     <Compile Include="Level2\S03_Kheops.cs" />
+    <Compile Include="Level2\S04_Powers.cs" />
     <Compile Include="Level3\S01_Shortcut.cs" />
+    <Compile Include="Level3\S02_Switch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

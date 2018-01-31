@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace ITI.Unicorn.Core.Level1
 {
-    public class P02_NoLemonNoMelon
+    public static class P02_NoLemonNoMelon
     {
         public static BigInteger GetLargestPalindrome(int factorsDigitsCount)
         {
