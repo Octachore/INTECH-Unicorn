@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level1;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level1
@@ -12,7 +13,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             string[] result = P01_Unicornflakes.GetSolution(input);
 
-            Assert.That(result, Is.EquivalentTo(expected));
+            result.ShouldBeEquivalentTo(expected);
         }
 
         [TestCase(new[] { 1, 2, 4, 5, 8, 10, 11, 13 }, new[] { "1", "2", "4", "corn", "8", "corn", "11", "13" })]
@@ -22,7 +23,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             string[] result = P01_Unicornflakes.GetSolution(input);
 
-            Assert.That(result, Is.EquivalentTo(expected));
+            result.ShouldBeEquivalentTo(expected);
         }
 
         [TestCase(new[] { 1, 2, 4, 7, 8, 11, 13, 14 }, new[] { "1", "2", "4", "flakes", "8", "11", "13", "flakes" })]
@@ -32,7 +33,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             string[] result = P01_Unicornflakes.GetSolution(input);
 
-            Assert.That(result, Is.EquivalentTo(expected));
+            result.ShouldBeEquivalentTo(expected);
         }
 
         [TestCase(new int[0], new string[0])]
@@ -45,7 +46,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             string[] result = P01_Unicornflakes.GetSolution(input);
 
-            Assert.That(result, Is.EquivalentTo(expected));
+            result.ShouldBeEquivalentTo(expected);
         }
     }
 }

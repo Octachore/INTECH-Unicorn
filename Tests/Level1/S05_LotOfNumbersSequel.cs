@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level1;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level1
@@ -85,9 +86,9 @@ namespace ITI.Unicorn.Tests.Level1
             var result2 = P05_LotOfNumbersSequel.GetProduct(Matrix2);
             var result3 = P05_LotOfNumbersSequel.GetProduct(Matrix3);
 
-            Assert.That(result1, Is.EqualTo(70600674));
-            Assert.That(result2, Is.EqualTo(64999872));
-            Assert.That(result3, Is.EqualTo(70523244));
+            result1.Should().Be(70600674);
+            result2.Should().Be(64999872);
+            result3.Should().Be(70523244);
         }
     }
 }

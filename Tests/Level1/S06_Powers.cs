@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level1;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level1
@@ -13,7 +14,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P06_Powers.GetSolution(p);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
     }
 }

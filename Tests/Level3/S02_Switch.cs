@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level3;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level3;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level3
@@ -13,7 +14,7 @@ namespace ITI.Unicorn.Tests.Level3
         {
             var result = P02_Switch.GetNthPermutation(numbers, n);
 
-            Assert.That(result, Is.EquivalentTo(expected));
+            result.ShouldBeEquivalentTo(expected);
         }
     }
 }

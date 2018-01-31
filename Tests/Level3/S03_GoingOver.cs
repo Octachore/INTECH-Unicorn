@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level3;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level3;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level3
@@ -12,7 +13,7 @@ namespace ITI.Unicorn.Tests.Level3
         {
             var result = P03_GoingOver.GetSolution(array);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
     }
 }

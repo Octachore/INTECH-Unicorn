@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
+using FluentAssertions;
 using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
@@ -9,7 +11,9 @@ namespace ITI.Unicorn.Tests.Level1
         [Test]
         public void P02_NoLemonNoMelon_GetNines_WithNegativeCount_ThrowException()
         {
-            Assert.That(() => P02_NoLemonNoMelon.GetNines(-1), Throws.ArgumentException);
+            Action a = () => P02_NoLemonNoMelon.GetNines(-1);
+
+            a.ShouldThrow<ArgumentException>();
         }
 
         [TestCase(0, 0)]
@@ -22,7 +26,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P02_NoLemonNoMelon.GetNines(count);
 
-            Assert.That(result, Is.EqualTo(new BigInteger(expected)));
+            result.Should().Be(new BigInteger(expected));
         }
 
         [TestCase(0, 0)]
@@ -34,7 +38,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P02_NoLemonNoMelon.GetLargestPalindrome(factorsDigitsCount);
 
-            Assert.That(result, Is.EqualTo(new BigInteger(expected)));
+            result.Should().Be(new BigInteger(expected));
         }
     }
 }

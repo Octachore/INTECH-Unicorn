@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level2;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level2;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level2
@@ -75,8 +76,8 @@ namespace ITI.Unicorn.Tests.Level2
             var result1 = P03_Kheops.GetBiggestPath(Pyramid1);
             var result2 = P03_Kheops.GetBiggestPath(Pyramid2);
 
-            Assert.That(result1, Is.EqualTo(1074));
-            Assert.That(result2, Is.EqualTo(2867));
+            result1.Should().Be(1074);
+            result2.Should().Be(2867);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level2;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level2;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level2
@@ -15,7 +16,7 @@ namespace ITI.Unicorn.Tests.Level2
         {
             var result = P02_TheBigOne.GetBestStartingNumber(maxStartingNumber);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ITI.Unicorn.Core.Level1;
+﻿using FluentAssertions;
+using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
 namespace ITI.Unicorn.Tests.Level1
@@ -23,7 +24,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P03_OptimusPrime.IsPrime(num);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
 
         [TestCase(2,3)]
@@ -36,7 +37,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P03_OptimusPrime.NextPrime(prime);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
 
         [TestCase(1, 2)]
@@ -54,7 +55,7 @@ namespace ITI.Unicorn.Tests.Level1
         {
             var result = P03_OptimusPrime.GetPrime(number);
 
-            Assert.That(result, Is.EqualTo(expected));
+            result.Should().Be(expected);
         }
     }
 }

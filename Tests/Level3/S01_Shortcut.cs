@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using FluentAssertions;
 using ITI.Unicorn.Core.Level3;
 using NUnit.Framework;
 
@@ -16,8 +17,8 @@ namespace ITI.Unicorn.Tests.Level3
             var result1 = P01_Shortcut.GetNumberOfPaths(a, b);
             var result2 = P01_Shortcut.GetNumberOfPathsIterative(a, b);
 
-            Assert.That(result1, Is.EqualTo(new BigInteger(expected)));
-            Assert.That(result2, Is.EqualTo(new BigInteger(expected)));
+            result1.Should().Be(new BigInteger(expected));
+            result2.Should().Be(new BigInteger(expected));
         }
     }
 }

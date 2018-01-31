@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using System.Text.RegularExpressions;
+using FluentAssertions;
 using ITI.Unicorn.Core.Level1;
 using NUnit.Framework;
 
@@ -42,7 +43,7 @@ namespace ITI.Unicorn.Tests.Level1
 
             var result = P04_LotOfNumbers.GetAdjacentProduct(number, count);
 
-            Assert.That(result, Is.EqualTo(new BigInteger(expected)));
+            result.Should().Be(new BigInteger(expected));
         }
     }
 }

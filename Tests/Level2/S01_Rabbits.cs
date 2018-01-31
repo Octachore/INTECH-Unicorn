@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using FluentAssertions;
 using ITI.Unicorn.Core.Level2;
 using NUnit.Framework;
 
@@ -15,7 +16,7 @@ namespace ITI.Unicorn.Tests.Level2
         {
             var result = P01_Rabbits.SumEvenFibonacciTerms(maxTerm);
 
-            Assert.That(result, Is.EqualTo(new BigInteger(expected)));
+            result.Should().Be(new BigInteger(expected));
         }
     }
 }
