@@ -61,6 +61,7 @@
     <Compile Include="Level1\S07_WallStreet.cs" />
     <Compile Include="Level1\S04_LotOfNumbers.cs" />
     <Compile Include="Level1\S05_LotOfNumbersSequel.cs" />
+    <Compile Include="Level1\S08_WeakLink.cs" />
     <Compile Include="Level2\S01_Rabbits.cs" />
     <Compile Include="Level2\S02_TheBigOne.cs" />
     <Compile Include="Level2\S03_Kheops.cs" />
