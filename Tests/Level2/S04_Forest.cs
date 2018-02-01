@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using ITI.Unicorn.Core.Level1;
 using ITI.Unicorn.Core.Level2;
 using NUnit.Framework;
 

@@ -29,5 +29,8 @@ namespace ITI.Unicorn.Core.Level2
             J = j;
             Count = count;
         }
+
+        public static bool operator ==(Square a, Square b) => throw new NotImplementedException();
+        public static bool operator !=(Square a, Square b) => throw new NotImplementedException();
     }
 }
